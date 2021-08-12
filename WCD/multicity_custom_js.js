@@ -51,6 +51,16 @@ $('.counter').counterUp({
     time: 2000 // the speed time in ms
 });
 
+$('#country').on('click',function(){
+    console.log('Nav item Clicked');
+    $('.w-nav-overlay').attr('style','display:none');
+});
+  
+  $('#Nav-program').on('click',function(){
+    console.log('Nav item Clicked');
+    $('.w-nav-overlay').attr('style','display:none');
+});
+
 
 
 });
