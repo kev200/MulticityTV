@@ -1,9 +1,12 @@
-.custom-shape-divider-bottom svg {
+.custom-shape-divider-top svg {
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
     height: 115px;
 }
-.custom-shape-divider-bottom .shape-fill.white {
+.custom-shape-divider-top .shape-fill.white {
     fill: #FFFFFF;
+}
+.custom-shape-divider-top .shape-fill.purple {
+    fill: #e11383;
 }
