@@ -1,0 +1,9 @@
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(300% + 1.3px);
+    height: 115px;
+}
+.custom-shape-divider-bottom .shape-fill.white {
+    fill: #FFFFFF;
+}
