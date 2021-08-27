@@ -4,9 +4,9 @@
     width: calc(300% + 1.3px);
     height: 115px;
 }
-.custom-shape-divider-top .shape-fill.white {
+.custom-shape-divider-top.white .shape-fill {
     fill: #FFFFFF;
 }
-.custom-shape-divider-top .shape-fill.purple {
+.custom-shape-divider-top.purple .shape-fill {
     fill: #e11383;
 }
