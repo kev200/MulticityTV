@@ -1,5 +1,3 @@
-/* Update */
-
 $(document).ready(function() {
 
 /* Change Slick slider arrows (Dependancy Slick JS)*/
