@@ -9,6 +9,9 @@ $("#blog_slides").slick({
   });
 
 
+
+ if ($('.w-slide')[0]){
+
 /* Change Slider numberical slide value based on the slide active (Dependancy attrchange.min.js)*/  
 
     /* 1. get the number of slides */
@@ -28,7 +31,11 @@ $("#blog_slides").slick({
         document.getElementById("counter").innerHTML =  (myIndex < 9 ? '0' : '') + (myIndex +1)
         }
     });
- 
+
+ } else {
+
+ }
+
 
 /* Change Flipster behavior (dependancy Flipster) */
 
