@@ -24,7 +24,7 @@
 	background: transparent !important;
     box-shadow: none !important;
 }
-  .geo--map.leaflet-container a.leaflet-popup-close-button {
+  .map-section #map.leaflet-container a.leaflet-popup-close-button {
     background-image: url(https://uploads-ssl.webflow.com/60ae9a8dbba8f536b22321fb/60c05d4301dfcf76a35ec74c_close.svg) !important;
   	background-repeat: no-repeat !important;
     color: transparent !important;
@@ -38,7 +38,7 @@
     width: 26px;
     height: 26px;
 }
-  .geo--map.leaflet-popup-content {
+.map-section #map.leaflet-popup-content {
     max-width: 200px;
 }
   .location_datetime {
