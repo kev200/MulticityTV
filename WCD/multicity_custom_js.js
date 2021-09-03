@@ -68,5 +68,51 @@ $('#country').on('click',function(){
 });
 
 
+$('.slick-carousel-container').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow : '<span class="icon-prev"><i class="lni lni-arrow-left arrow-margin"></i>Previous Video</span>',
+    nextArrow : '<span class="icon-next">Next Video<i class="lni lni-arrow-right arrow-margin"></i></span>',
+    responsive: [{
 
+        breakpoint: 479,
+        settings: {
+        slidesToShow: 1,
+        }
+
+    },
+                {
+
+        breakpoint: 800,
+    slidesToShow: 3,
+                
+    }]
+});
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+
+/* End */
 });
