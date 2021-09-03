@@ -19,7 +19,7 @@ $("#blog_slides").slick({
     document.getElementById("totalSlides").innerHTML = (numItems < 9 ? '0' : '') + (numItems);
     var myIndex = $(".w-slider-dot.w-active").index();
     /* format index like this: 05...09...10....12"*/
-    document.getElementById("counter").innerHTML = (myIndex < 9 ? '0' : '') + (myIndex +1)
+    document.getElementById("counter").innerHTML = (myIndex < 9 ? '0' : '') + (myIndex +1);
 
     /* 2. change the index dynamically */
     $(".w-slide").attrchange({
@@ -27,7 +27,7 @@ $("#blog_slides").slick({
         callback: function(event) {
         myIndex = $(".w-slider-dot.w-active").index();
         /* format index like this: 05...09...10....12"*/
-        document.getElementById("counter").innerHTML =  (myIndex < 9 ? '0' : '') + (myIndex +1)
+        document.getElementById("counter").innerHTML =  (myIndex < 9 ? '0' : '') + (myIndex +1);
         }
     });
 
@@ -38,34 +38,43 @@ $("#blog_slides").slick({
 
 /* Change Flipster behavior (dependancy Flipster) */
 
-var coverflow = $("#coverflow").flipster({
-    style: 'carousel',
-    spacing: -0.25,
-    itemContainer: '#wrapper',
-    itemSelector: '.w-dyn-item',
-    scrollwheel: false,
-   
-   buttons: 'custom',
-    buttonPrev: '<i class="lni lni-arrow-left"></i> Scroll Left',
-    buttonNext: 'Scroll Right <i class="lni lni-arrow-right"></i>',
-    fadeIn: 800,
-    start: 'center',
- });
+if ($('#coverflow')[0]){
 
-$('.counter').counterUp({
-    delay: 100, // the delay time in ms
-    time: 2000 // the speed time in ms
-});
+    var coverflow = $("#coverflow").flipster({
+        style: 'carousel',
+        spacing: -0.25,
+        itemContainer: '#wrapper',
+        itemSelector: '.w-dyn-item',
+        scrollwheel: false,
+    
+    buttons: 'custom',
+        buttonPrev: '<i class="lni lni-arrow-left"></i> Scroll Left',
+        buttonNext: 'Scroll Right <i class="lni lni-arrow-right"></i>',
+        fadeIn: 800,
+        start: 'center',
+    });
+} else { 
+    
+}
 
-$('#country').on('click',function(){
-    console.log('Nav item Clicked');
-    $('.w-nav-overlay').attr('style','display:none');
-});
-  
-  $('#Nav-program').on('click',function(){
-    console.log('Nav item Clicked');
-    $('.w-nav-overlay').attr('style','display:none');
-});
+
+
+    $('.counter').counterUp({
+        delay: 100, // the delay time in ms
+        time: 2000 // the speed time in ms
+    });
+
+    $('#country').on('click',function(){
+        console.log('Nav item Clicked');
+        $('.w-nav-overlay').attr('style','display:none');
+    });
+    
+    $('#Nav-program').on('click',function(){
+        console.log('Nav item Clicked');
+        $('.w-nav-overlay').attr('style','display:none');
+    });
+
+
 
 
 $('.slick-carousel-container').slick({
