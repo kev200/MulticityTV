@@ -8,6 +8,15 @@ $("#blog_slides").slick({
   });
 
 
+  if ($('.counter')[0]){
+    $('.counter').counterUp({
+        delay: 100, // the delay time in ms
+        time: 2000 // the speed time in ms
+    });
+
+    } else {
+}
+
 
  if ($('.w-slide')[0]){
 
@@ -54,15 +63,9 @@ if ($('#coverflow')[0]){
         start: 'center',
     });
 } else { 
-    
+
 }
 
-
-
-    $('.counter').counterUp({
-        delay: 100, // the delay time in ms
-        time: 2000 // the speed time in ms
-    });
 
     $('#country').on('click',function(){
         console.log('Nav item Clicked');
