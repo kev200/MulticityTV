@@ -9,7 +9,7 @@ $("#blog_slides").slick({
 
 
   if ($('.counter')[0]){
-    $('.counter').counterUp({
+    $('.counterup').counterUp({
         delay: 100, // the delay time in ms
         time: 2000 // the speed time in ms
     });
